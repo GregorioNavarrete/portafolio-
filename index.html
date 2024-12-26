@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Gregorio N-Portafolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <!-- agrego codigo  -->
+    <div class="Español inactive">
+            <!-- quiero q oculte este bloque si el boton esta en ingles -->
+    <header>
+        <h1></h1>
+        <!-- <button id="darkModeBtn">Modo Oscuro</button> -->
+        <button id="langBtn">
+            <img src="https://media.flaticon.com/dist/min/img/flags/en.svg" width="25" height="25" loading="lazy">
+        </button>
+        <div class="cambiar-tema">
+            <button id="btn-dark" type="button" class="btn icon" value="dark" onclick="cambiarTema(this.value)">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="btn-light" type="button" class="btn icon" value="light" onclick="cambiarTema(this.value)">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <section>
+        <img class="perfi" src="perfil2.png" alf="<%=producto.titulo%>"style="width: 200px;height: 200px;margin-right: 20px;margin-left: 20px;border-radius: 100px;">
+        <h1>
+            Sobre mí.<br>
+            Soy un desarrollador fullstack. <br>
+            Apasionado por crear <span class="text-primary">soluciones innovadoras.</span>
+        </h1>
+        <a class="primary-link" target="_blank">Ver mas!</a>
+        
+        <a class="primary-link" target="_blank" href="https://www.linkedin.com/in/gregorio-navarrete/">LinkedIn</a>
+
+    </section>
+
+        <section id="about">
+            
+            <h2><span class="text-primary">Sobre mí</span></h2>
+            <p id="aboutText">¡Hola! Soy un desarrollador fullstack apasionado por crear soluciones innovadoras.</p>
+            <p id="aboutText">Hola soy Gregorio Navarrete, estudiante avanzado de programacion en la universidad y desarrollador Fullstack.</p>
+            <p id="aboutText">Inicie en la programacion como un hobby hace poco mas de 3 años.
+                En la universidad, me sumergí en el análisis de algoritmos y el desarrollo de programas con estructuras dinámicas en lenguajes como C, C++ y JAVA, los cuales corrían en la terminal.
+                Sin embargo, surgió en mí un interés por aprender y desarrollar programas en un entorno más visual, como la web. Aprendí mucho sobre el front y back end.</p>
+                <p id="aboutText">Hoy en dia sigo aprediendo y haciendo proyectos web tomando cursos como en "Digital House" y "Platzi". </p>
+            <p id="aboutText">Entre mis logros destaco ...</p>
+            <p id="aboutText">Como proyecto personal ...</p>
+            <p id="aboutText">Por último, les comparto mi hoja de vida actualizada, donde de forma más detallada específico mi experiencia laboral, logros y formación académica. </p>
+        </section>
+        <section  class="projects" >
+            <h2><span class="text-primary" >Proyectos</span></h2>
+            <div class="project">
+                <h3>Proyecto Prisma</h3>
+                <div class="sliders">
+                    <div class="sidebar">
+
+                        <video width="800" height="601" controls>
+                            <source src="path_to_your_video.mp4" type="video/mp4">
+                            
+                        </video>
+                        
+                    </div>
+                </div>
+                <p>Descripción del Proyecto 1.</p>
+                <a href="#">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del Proyecto 2.</p>
+                <a href="#">Ver Proyecto</a>
+            </div>
+            <!-- Agrega más proyectos según sea necesario -->
+        </section>
+        <footer style="width: 100%;
+    text-align: center;">
+            <p>&copy; 2024 Desarrollador Fullstack</p>
+        </footer>
+    </div>
+
+    <div class="ingles" >
+        <!-- quisiera que con el JS me oculte todo que esta el boton en español  -->
+        <header>
+            <h1></h1>
+            <!-- <button id="darkModeBtn2">Dark Mode</button> -->
+            <button id="langBtn2">
+                <img src="https://media.flaticon.com/dist/min/img/flags/es.svg" width="25" height="25" loading="lazy">
+            </button>
+            <div class="cambiar-tema">
+                <button id="btn-darkIngles" type="button" class="btn icon" value="dark" onclick="cambiarTemaIngles(this.value)">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="btn-lightIngles" type="button" class="btn icon" value="light" onclick="cambiarTemaIngles(this.value)">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </header>
+        <section>
+            <img class="perfi" src="perfil2.png" alf="<%=producto.titulo%>"style="width: 200px;height: 200px;margin-right: 20px;margin-left: 20px;border-radius: 100px;">
+            <h1>
+                About mi. <br>
+                I am a fullstack developer. <br>
+                Passionate about creating <span class="text-primary">innovative solutions.</span>
+            </h1>
+            <a class="primary-link" target="_blank">See more!</a>
+        </section>
+        <section id="about">
+            <h2><span class="text-primary" >About Me</span></h2>
+            <p id="aboutText">Hello! I am a fullstack developer passionate about creating innovative solutions.</p>
+        </section>
+        <section  class="projects2" >
+            <h2><span class="text-primary" >Projects</span></h2>
+            <div class="project">
+                <h3>Proyecto Prisma</h3>
+                <div class="sliders">
+                    <div class="sidebar">
+
+                        <video width="800" height="601" controls>
+                            <source src="path_to_your_video.mp4" type="video/mp4">
+                            
+                        </video>
+                        
+                    </div>
+                </div>
+                <p>Descripción del Proyecto 1.</p>
+                <a href="#">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more projects as necessary -->
+        </section>
+        <footer style="width: 100%;
+    text-align: center;">
+            <p>&copy; 2024 Fullstack Developer</p>
+        </footer>
+    </div>
+    
+    <script src="./script1.js"></script>
+</body>
+
+</html>

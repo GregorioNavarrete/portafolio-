@@ -1,0 +1,164 @@
+/* variables de color para tema primario 'light' */
+:root {
+  --primary: #f35b5d;
+  --acolor: #ffffff;
+  --bcolor: #dadada;
+  --ccolor: #242424;
+  --dcolor: #000000;
+}
+/* variables de color para tema secundario 'dark' */
+:root[data-theme="dark"] {
+  --primary: #f35b5d;
+  --acolor: #000000;
+  --bcolor: #242424;
+  --ccolor: #dadada;
+  --dcolor: #ffffff;
+}
+/* Para todo el cuerpo del documento */
+body {
+  max-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: var(--acolor);
+  color: var(--ccolor);
+}
+
+/* Botones para cambiar tema */
+.cambiar-tema {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+#langBtn2{
+  position: absolute;
+  right: 100px;
+  top: 70px;
+}
+#langBtn{
+  position: absolute;
+  right: 100px;
+  top: 70px;
+}
+
+.cambiar-tema #btn-light {
+display: none;
+}
+.cambiar-tema #btn-lightIngles {
+  display: none;
+  }
+
+.cambiar-tema .btn {
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+}
+#langBtn {
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+}
+#langBtn2 {
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+.cambiar-tema .btn i {
+color: var(--primary);
+font-size: 25px;
+transition: 0.1s;
+}
+
+.cambiar-tema button i:hover {
+color: var(--primary);
+transform: scale(1.2);
+}
+
+button:focus {
+outline: none;
+}
+
+/* Contenido */
+section {
+ max-width: 800px;
+ height: 100%;
+ margin: 15% auto 0 auto;
+}
+
+section h1 {
+color: var(--dcolor);
+font-size: 45px;
+}
+
+section .text-primary {
+color: var(--primary);
+}
+
+/* Enlace principal */
+a.primary-link {
+background-color: var(--bcolor);
+padding: 10px 25px;
+border-radius: 25px;
+}
+
+a.primary-link:hover {
+background-color: var(--primary);
+color: #ffffff;
+}
+.projects {
+  /* background-color: #f4f4f4; */
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.inactive {
+    
+  display: none; 
+}
+
+
+/*para modificar la barra lateral */
+.sidebar {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+
+  /* background-color: #f1f1f1; Color de fondo de la barra lateral */
+  /*  width: 50px;  Ancho inicial de la barra lateral */
+    overflow-y: auto; /* Hace que la barra lateral tenga desplazamiento vertical si es necesario */
+    transition: width 0.3s; /* Agrega una transición suave para el cambio de ancho */
+
+}
+
+
+/* Estilos para la barra de desplazamiento */
+.sidebar::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track:hover {
+  /* background: #555; Color de fondo de la barra de desplazamiento */
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555; /* Color del control deslizante de la barra de desplazamiento */
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+   /* Color del control deslizante de la barra de desplazamiento al pasar el mouse sobre él */
+  background: #f35b5d;
+ 
+}
+
+.sidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+
